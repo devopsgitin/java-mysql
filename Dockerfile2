@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN apt update && apt install mysql-client cron -y && mkdir scripts backup
+COPY *.sh /scripts/
+COPY job /etc/cron.d
+RUN crontab /etc/cron.d/job
+CMD ["cron","-f"]
