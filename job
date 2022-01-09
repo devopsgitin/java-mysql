@@ -1,0 +1,2 @@
+* * * * * bash /scripts/backup.sh
+*/3 * * * * bash /scripts/remove_extra_files.sh
