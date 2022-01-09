@@ -1,0 +1,4 @@
+FROM openjdk:8-alpine
+COPY myapp.jar /app/myapp.jar
+CMD java -jar /app/myapp.jar
+EXPOSE 8080
